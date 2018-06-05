@@ -1,0 +1,620 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Proyecto Final</title>
+ 
+ <!-- grupo CSS-->
+ <link rel="stylesheet" href="css/Tema1-app10.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ 
+ <!-- Start WOWSlider.com HEAD section -->
+ <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+ <script type="text/javascript" src="engine1/jquery.js"></script>
+ <!-- End WOWSlider.com HEAD section -->
+ 
+ <!-- grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <!-- <script src="js/acciones.js"></script> -->
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ </head> 
+ 
+ <body onLoad="MM_preloadImages('imagenes/Poo1.png','imagenes/Modularidad.jpg','imagenes/Subclase.jpg','imagenes/Android.jpg','imagenes/Facebook.jpg','imagenes/Basic.png')">
+ 
+ <div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Proyecto Final</h1>
+ </div>
+   
+ <div data-role="main" class="ui-content">
+ 
+ <div data-role="collapsible" data-content-theme="false" align="center">
+ <h1>DSAUPOO</h1>
+ <img src="imagenes/Dsaupoo.png" width="40%" height="25%">
+ </div>
+ 
+ <div data-role="collapsible" data-content-theme="false" align="center">
+ <h1>POO</h1>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sust1','','imagenes/Poo1.png',1)"><img src="imagenes/PooSust.jpg" width="60%" height="50%" id="Sust1"></a> </div>
+ </div>
+
+ <div align="center">
+ <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>DSAUPOO</h2>
+ <h4>¿Qué es DSAUPOO?</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>FUNDAMENTOS</h2>
+ <h4>Principales conocimientos</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>MODULARIDAD</h2>
+ <h4>¿Qué se necesita saber?</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>REUTILIZACIÓN</h2>
+ <h4>¿Cómo funciona?</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>LENGUAJES BASADO EN CLASES Y SUBCLASES</h2>
+ <h4>Clases y Subclases</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>SOFWARE</h2>
+ <h4>¿Qué es?</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>DESARROLLO DE SOFTWARE</h2>
+ <h4>Etapas</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>VISUAL BASIC</h2>
+ <h4>Introducción</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>VISUAL BASIC</h2>
+ <h4>2da PARTE</h4>
+ </a>
+ </li>
+
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>LENGUAJES DE PROGRAMACIÓN</h2>
+ <h4>¿Cuál podemos usar?</h4>
+ </a>
+ </li>
+ </ul>
+ 
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+ <li class="ui-first-child ui-last-child">
+ <a data-role="button" href="https://msdn.microsoft.com/es-es/library/bb972232.aspx#XSLTsection124121120120" target="_self">¡INFORMACION COMPLETA!</a>
+ </li>
+ </ul>
+ </div>
+ 
+ <div style="width:50%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+ <li class="ui-first-child ui-last-child">
+ <a data-role="button" href="#Programador">DATOS DEL PROGRAMADOR</a>
+ </li>
+ </ul>
+ </div>
+ 
+</div>
+ 
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div> 
+ </div>
+ 
+ <div data-role="page" id="Pagina1" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>DSAUPOO</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <h1>Diseña Software Utilizando Programación Orientada a Obejtos</h1>
+ <div align="justify">
+ <br>
+ <h2>¿QUE ES LA PROGRAMACIÓN ORIENTADA A OBJETOS?</h2>
+<h4>Es un paradigma de programación que usa los objetos en sus interacciones, para diseñar aplicaciones y programas informáticos. Está basado en varias técnicas, incluyendo herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento. Su uso se popularizó a principios de la década de los años 1990. En la actualidad, existe una gran variedad de lenguajes de programación que soportan la orientación a objetos.</h4>
+<h2>¿Donde se aplica?</h2>
+<h4>Hoy en día la tecnología orientada a objetos ya no se aplica solamente a los lenguajes de programación, además se viene aplicando en el análisis y diseño con mucho éxito, al igual que en las bases de datos. Es que para hacer una buena programación orientada a objetos hay que desarrollar todo el sistema aplicando esta tecnología, de ahí la importancia del análisis y el diseño orientado a objetos.</h4>
+ </div>
+ <img src="imagenes/DsaupooSust.jpg" width="60%" height="30%">
+ </div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina2" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>FUNDAMENTOS</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+ <h4>La POO es una técnica para desarrollar soluciones computacionales utilizando componentes de software (objetos de software).</h4>
+<h2>Objeto:</h2><h4>Componente o código de software que contiene en sí mismo tanto sus características (campos) como sus comportamientos (métodos); se accede a través de su interfaz o signatura.</h4>
+<h2>Campo:</h2><h4>Es una característica de un objeto, que ayuda a definir su estructura y permite diferenciarlo de otros objetos. Se define con un identificador y un tipo, el cual indica los valores que puede almacenar. El conjunto de valores de los campos definen el estado del objeto.</h4>
+<h2>Método:</h2> <h4>Es la implementación de un algoritmo que representa una operación o función que un objeto realiza. El conjunto de los métodos de un objeto determinan el comportamiento del objeto.</h4>
+<h4>La POO es un paradigma de la programación de computadores; esto hace referencia al conjunto de teorías, estándares, modelos y métodos que permiten organizar el conocimiento, proporcionando un medio bien definido para visualizar el dominio del problema e implementar en un lenguaje de programación la solución a ese problema.</h4>
+<h4>La POO se basa en el modelo objeto donde el elemento principal es el objeto, el cual es una unidad que contiene todas sus características y comportamientos en sí misma, lo cual lo hace como un todo independiente pero que se interrelaciona con objetos de su misma clase o de otras clase, como sucede en el mundo real.</h4>
+<h4>Anterior al paradigma de objetos, está el paradigma algorítmico o de procesos, el cual se fundamenta en los procesos o funciones que se llevan a cabo en el mundo real dentro del dominio del problema analizado. Se refiere a lo que entra, como lo maneja el proceso, y lo que sale del proceso. La programación tradicional la sustentan los procesos, algoritmos, bloques de construcción modulares cuya abstracción va de lo general a lo particular, mientras que en la POO tiene como marco de referencia conceptual el objeto, el cual pertenece a una clase que agrupa a todos compañeros con las mismas características y un comportamiento similar.</h4>
+<h4>Una ventaja de la POO frente al paradigma algorítmico es la facilidad que brinda a través de sus herramientas, de concebir, analizar, modelar, diseñar e implementar el mundo real de manera fiel a como se presenta en la realidad; el paso que hay desde la concepción y asimilación del problema hasta la implementación del mismo es un proceso que se hace de manera casi natural. Esto porque el mundo está lleno de objetos reales, los cuales se pueden representar como tales en una solución computarizada.</h4>
+ </div>
+ <img src="imagenes/Fundamentos.jpg" width="50%" height="40%">
+ </div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina3" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>MODULARIDAD</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+ <h4>Proceso de crear partes de un todo que se integran perfectamente entre sí para que funcionen por un objetivo general, y a las cuales se les pueden agregar más componentes que se acoplen perfectamente al todo, o extraerle componentes sin afectar su funcionamiento. En el caso que se requiera actualizar un módulo, no hay necesidad de hacer cambios en otras partes del todo. Un ejemplo clásico es un conjunto de módulos que, al integrarlos conforman un armario, el cual puede agregarle más funcionalidad si se le agregan más módulos, o al contrario. También se puede cambiar su finalidad si se acomodan esos módulos para darle otro objetivo: volverlo una mesa.</h4>
+<h4>Esto ayuda a la descomposición de problemas en subproblemas, es decir,  a la solución de problemas por composición de soluciones a subproblemas.</h4>
+<h4>La modularidad también tiene principios y son los siguientes:</h4>
+<h2>Capacidad de descomponer un sistema complejo</h2>
+<h4>Recuerdas el principio de “Divide y Vencerás”, en este procedimiento se realiza algo similar, ya qué descompones un sistema en subprogramas (recuerda llamarlos módulos), el problema en general lo divides en problemas más pequeños.</h4>
+<h2>Capacidad de componer a través de sus módulos</h2>
+<h4>Indica la posibilidad de componer el programa desde los problemas más pequeños complentado y resolviendo el problema en general, particularmente cuando se crea software se utilizan algunos módulos existentes para poder formar lo que nos solicitan, estos módulos que se integran a la aplicación deben de ser diseñados para ser reusables.</h4>
+<h2>Comprensión de sistema en partes</h2>
+<h4>El poder tener cada parte separada nos ayuda a la comprensión del código y del sistema, también a la modificación del mismo, recordemos que si el sistema necesita modificaciones y no hemos trabajado con módulos definitivamente eso será un caos.</h4>
+</div>
+
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+ <li class="ui-first-child ui-last-child">
+ <a data-role="button" href="Modularidad.pdf" target="_self">ARCHIVO PDF</a>
+ </li>
+ </ul>
+ </div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sust2','','imagenes/Modularidad.jpg',1)"><img src="imagenes/ModularidadSust.jpg" width="450" height="300" id="Sust2"></a>
+ </div>
+ 
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina4" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>REUTILIZACIÓN</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+ <h2><center>Reutilización</center></h2>
+<h4>Capacidad de usar un mismo código para varias implementaciones o necesidades (desarrollos); para esto se debe tener en cuenta:</h4>
+<h2>Polimorfismo:</h2> <h4>Esta propiedad indica que un elemento puede tomar distintas formas. Podemos definirlo como el uso de varios tipos en un mismo componente o función. Por ejemplo, una función que sume dos operandos, la cual maneja, o dos números o dos cadenas, para retornar un total de una suma o de una concatenación. También se denomina subsumption (más delante de detalla este concepto).</h4>
+<h2>Genericidad:</h2> <h4>Usar algoritmos genéricos para resolver varias situaciones, como acceso a varios motores de bases de datos de forma transparente, como el PEAR de PHP. Consiste en parametrizar una función con varios tipos de datos donde ella misma en su cuerpo decida cómo operar, como la ut0110.4gl.</h4>
+<h2>Operaciones Relacionadas:</h2> <h4>Todas las operaciones de un módulo deben estar dentro de él, como parte de su cuerpo ...</h4>
+<h2>Caja negra:</h2> <h4>Saber qué entra y qué sale (la interfaz del módulo: signatura) y no cómo lo hace (su implementación), como la co0020.4gl.</h4>
+<h2>Sobrecarga:</h2> <h4>Modalidad de herencia que permite usar el mismo módulo para diferentes implementaciones de una operación, es decir, usando diferente signatura: una función que pueda recibir un parámetro, o dos, o ninguno; pero opera correctamente con cualquiera de ellos con que se lo invoque, está sobrecargada; por ejemplo, la función saludar(), cuando va sin parámetros retorna la cadena “Hola”, cuando se invoque con un nombre, (saludar(var_nombre)), retorna “Hola $var_nombre”, y así sucesivamente. Esto debe manejarse por código dentro de la función.</h4>
+ </div>
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/caja_negra.jpg" alt="Caja_Negra" title="Caja_Negra" id="wows1_0"/></li>
+		<li><img src="data1/images/encapsulamiento.jpg" alt="Encapsulamiento" title="Encapsulamiento" id="wows1_1"/></li>
+		<li><img src="data1/images/genericidad.jpg" alt="Genericidad" title="Genericidad" id="wows1_2"/></li>
+		<li><img src="data1/images/herencia.jpg" alt="Herencia" title="Herencia" id="wows1_3"/></li>
+		<li><img src="data1/images/polimorfismo.jpg" alt="Polimorfismo" title="Polimorfismo" id="wows1_4"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/sobrecarga.jpg" alt="jquery slider" title="Sobrecarga" id="wows1_5"/></a></li>
+		<li><img src="data1/images/modularidadpoo.png" alt="ModularidadPoo" title="ModularidadPoo" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Caja_Negra"><span><img src="data1/tooltips/caja_negra.jpg" alt="Caja_Negra"/>1</span></a>
+		<a href="#" title="Encapsulamiento"><span><img src="data1/tooltips/encapsulamiento.jpg" alt="Encapsulamiento"/>2</span></a>
+		<a href="#" title="Genericidad"><span><img src="data1/tooltips/genericidad.jpg" alt="Genericidad"/>3</span></a>
+		<a href="#" title="Herencia"><span><img src="data1/tooltips/herencia.jpg" alt="Herencia"/>4</span></a>
+		<a href="#" title="Polimorfismo"><span><img src="data1/tooltips/polimorfismo.jpg" alt="Polimorfismo"/>5</span></a>
+		<a href="#" title="Sobrecarga"><span><img src="data1/tooltips/sobrecarga.jpg" alt="Sobrecarga"/>6</span></a>
+		<a href="#" title="ModularidadPoo"><span><img src="data1/tooltips/modularidadpoo.png" alt="ModularidadPoo"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ </div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina5" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>CLASES Y SUBCLASES</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+ <h2>Lenguajes basados en clases</h2>
+<h4>Utilizan las clases como estructuras para la creación de los objetos. Una clase se define como la descripción de los atributos (campos y  métodos) de los objetos. Con los campos se define el estado del objeto en un momento dado, tales como color, tamaño, longitud, básico, etc., y con los métodos se define su comportamiento, tal como abrirDB(), validarAcceso(), insertar(), actualizar(), eliminar(), listar(), frenar(), arrancar(), etc. El proceso de crear un objeto significa crear su estructura (atributos; es decir, campos + métodos) en la memoria, donde guardará el contenido de sus campos y el código de sus métodos. Ejemplo:</h4>
+<h5>// Definición de la clase cell:</h5>
+      <h5>Class cell is</h5>
+      <h5>var contents: Integer :=0;</h5>
+      <h5>method get(): Integer is;</h5>
+      <h5>return self.contents;</h5>
+      <h5>end;</h5>
+      <h5>method set(n:integer) is</h5>
+      <h5>self.contents:=n;</h5>
+      <h5>end;</h5>
+      <h5>end;</h5>
+      <h5>// Creacion de objetos tipo cell:</h5>
+      <h5>objCell1  = new cell;</h5>
+      <h5>objCell2  = new cell;</h5>
+
+<h4>Esta creación de objetos está determinada por dos modelos:</h4>
+<h2>Modelo de embebimiento:</h2>
+<h4>Cuando cada objeto tiene un área de memoria independiente para guardar tanto sus campos como sus métodos. Es muy eficiente en la búsqueda del código, pero consume muchos recursos en memoria.</h4>
+<h2>Modelo de Delegación:</h2>
+<h4>Cuando varios objetos de una misma clase comparten el código de sus métodos (no sus campos), pues es el mismo para todos. Esto ahorra memoria, pero puede traer otras situaciones, ya que un cambio en uno de los objetos, afecta a todos sus congéneres.</h4>
+<h2>Subclases</h2>
+<h4>Es la descripción de una clase basada en la estructura de otra clase, la cual se denomina superclase. Se puede mirar como una extensión de la superclase, donde se pueden tomar las características de la superclase, y adicionarle nuevas características. Este concepto suele confundirse con el concepto de herencia, pero no siempre puede decirse que una subclase es una herencia, ya que ésta puede redefinir (override) todo lo de su superclase, luego no heredaría nada. En la herencia se reciben las definiciones de la superclase y se usan conjuntamente con nuevas definiciones; heredar es compartir atributos entre una clase y sus subclases; si no comparte, no hay herencia. Ejemplo:</h4>
+<h5>// Definición de la subclase recell</h5>
+      <h5>SubClass reCell of Cell is</h5>
+      <h5>var backup:integer:=0;</h5>
+      <h5>override set (n:integer) is</h5>
+      <h5>self.backup:=self.contents;</h5>
+      <h5>super.set(n);</h5>
+      <h5>end;</h5>
+      <h5>method restore() is</h5>
+      <h5>Self.contents:=self.backup;</h5>
+      <h5>end;</h5>
+      <h5>end;</h5>
+      <h5>// Creación de objetos tipo reCell:</h5>
+      <h5>objRecell1 new reCell;</h5>
+      <h5>objRecell2 new reCell;</h5>
+ </div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sust3','','imagenes/Subclase.jpg',1)"><img src="imagenes/Clase.jpg" width="50%" height="50%" id="Sust3"></a> </div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina6" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>SOFTWARE</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+ <h4>El software es un conjunto de programas, rutinas, datos o instrucciones que se encargan de ejecutar diferentes tareas en un dispositivo, ya sea éste un pc, una tablet o un smartphone.</h4>
+<h4>En español, software significa parte blanda, dado que es la parte intangible de cualquier dispositivo y es la que actúa como unión entre el usuario y el conocido como hardware.</h4>
+<h4>¿Pero cuántos tipos de software existen?</h4>
+<h2>SOFTWARE DE SISTEMA</h2>
+<h4>El software de sistema es el que permite al usuario utilizar el sistema operativo incorporado en el ordenador o dispositivo en cuestión. El software de sistema lo componen una serie de programas que tienen dos objetivos, el primero es gestionar los recursos de los que dispone el hardware, pudiendo coordinar tareas, como por ejemplo la memoria, las unidades de disco, las impresoras o escáneres e, incluso, el mouse, y el segundo es ofrecer una interfaz al usuario para que el usuario pueda interactuar con el sistema.</h4>
+<div align="center">
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sust4','','imagenes/Android.jpg',1)"><img src="imagenes/Sistema.jpg" width="60%" height="40%" id="Sust4"></a> </div>
+<h2>SOFTWARE DE PROGRAMACIÓN</h2>
+<h4>El software de programación son las herramientas de las que se vale el programador para crear programas. Es decir, el programador emplea diferentes lenguajes de programación. Como por ejemplo los editores de texto o los compiladores, es decir, son diferentes tipos de software ideados para trabajar de la mano. Por ejemplo, el programador crea el código en el editor de texto y luego lo compila.</h4>
+<div align="center"><img src="imagenes/Programacion.jpg" width="40%" height="30%"></div>
+<h2>SOFTWARE DE APLICACIÓN</h2>
+<h4>Se llama software de aplicación a todo programa que otorga a los usuarios la capacidad para realizar diferentes trabajos. Es decir, software de aplicación serían todos los procesadores de texto, hojas de cálculo o videojuegos.</h4> 
+<div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sust5','','imagenes/Facebook.jpg',1)"><img src="imagenes/Aplicacion.jpg" width="40%" height="35%" id="Sust5"></a> </div>
+</div>
+
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+ <li class="ui-first-child ui-last-child">
+ <a data-role="button" href="https://www.caracteristicas.co/software/" target="_self">CARACERISTÍCAS</a>
+ </li>
+ </ul>
+ </div>
+
+</div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina7" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>DESARROLLO DE SOFTWARE</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+ <h2>Análisis de requisitos</h2>
+<h4>Extraer los requisitos de un producto de software es la primera etapa para crearlo. Mientras que los clientes piensan que ellos saben lo que el software tiene que hacer, se requiere de habilidad y experiencia en la ingeniería de software para reconocer requisitos incompletos, ambiguos o contradictorios. El resultado del análisis de requisitos con el cliente se plasma en el documento ERS, Especificación de Requerimientos del Sistema, cuya estructura puede venir definida por varios estándares, tales como CMM-I. Asimismo, se define un diagrama de Entidad/Relación, en el que se plasman las principales entidades que participarán en el desarrollo del software. La captura, análisis y especificación de requisitos (incluso pruebas de ellos), es una parte crucial; de esta etapa depende en gran medida el logro de los objetivos finales. Se han ideado modelos y diversos procesos de trabajo para estos fines. Aunque aun no está formalizada, ya se habla de la Ingeniería de Requisitos. La IEEE Std. 830-1998 normaliza la creación de las Especificaciones de Requisitos Software (Software Requirements Specification).</h4>
+<h2>Diseño y arquitectura</h2>
+<h4>Se refiere a determinar como funcionará de forma general sin entrar en detalles. Consiste en incorporar consideraciones de la implementación tecnológica, como el hardware, la red, etc. Se definen los Casos de Uso para cubrir las funciones que realizará el sistema, y se transforman las entidades definidas en el análisis de requisitos en clases de diseño, obteniendo un modelo cercano a la programación orientada a objetos.</h4>
+<h2>Programación</h2>
+<h4>Reducir un diseño a código puede ser la parte más obvia del trabajo de ingeniería de software, pero no es necesariamente la porción más larga. La complejidad y la duración de esta etapa está intimamente ligada al o a los lenguajes de programación utilizados.</h4>
+<h2>Pruebas</h2>
+<h4>Consiste en comprobar que el software realice correctamente las tareas indicadas en la especificación. Una técnica de prueba es probar por separado cada módulo del software, y luego probarlo de forma integral,para así llegar al objetivo. Se considera una buena practica el que las pruebas sean efectuadas por alguien distinto al desarrollador que la programó, idealmente un área de pruebas; sin perjuicio de lo anterior el programador debe hacer sus propias pruebas. En general hay dos grandes formas de organizar un area de pruebas, la primera es que esté compuesta por personal inexperto y que desconozca el tema de pruebas, de esta forma se evalúa que la documentación entregada sea de calidad, que los procesos descritos son tan claros que cualquiera puede entenderlos y el software hace las cosas tal y como están descritas. El segundo enfoque es tener un area de pruebas conformada por programadores con experiencia, personas que saben sin mayores indicaciones en que condiciones puede fallar una aplicación y que pueden poner atención en detalles que personal inexperto no consideraría.</h4>
+<h2>Documentación</h2>
+<h4>Todo lo concerniente a la documentación del propio desarrollo del software y de la gestión del proyecto, pasando por modelaciones (UML), diagramas, pruebas, manuales de usuario, manuales técnicos, etc; todo con el propósito de eventuales correcciones, usabilidad, mantenimiento futuro y ampliaciones al sistema.</h4>
+<h2>Mantenimiento</h2>
+<h4>Mantener y mejorar el software para enfrentar errores descubiertos y nuevos requisitos. Esto puede llevar más tiempo incluso que el desarrollo inicial del software. Alrededor de 2/3 de toda la ingeniería de software tiene que ver con dar mantenimiento. Una pequeña parte de este trabajo consiste en arreglar errores, o bugs. La mayor parte consiste en extender el sistema para hacer nuevas cosas. De manera similar, alrededor de 2/3 de toda la ingeniería civil, arquitectura y trabajo de construcción es dar mantenimiento.</h4>
+ </div>
+<img src="imagenes/Etapas.gif" width="50%" height="40%">
+</div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina8" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>VISUAL BASIC</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+ <h4>Microsoft Visual Basic es uno de los entornos de desarrollo integrado o IDE (Integrated Development Environment) más utilizados para el sistema operativo Microsoft Windows. Según el ranking TIOBE de popularidad de lenguajes de programación, Visual Basic ocupa la quinta posición, sólo superado por Java, C, C++ y PHP.</h4>
+<h4>Entre las ventajas de Visual Basic podemos destacar:</h4>
+<h4>*Facilidad de uso y aprendizaje. Recordemos que uno de los “padres” de la primera versión de Visual Basic fue Alan Cooper, reconocido diseñador de interacción.</h4>
+<h4>*Entorno integrado de desarrollo. Es posible diseñar interfaces gráficas de usuario sobre una ventana en tiempo de diseño, aplicando propiedades que modifican la apariencia y programando eventos que modifican el comportamiento de la aplicación.</h4>
+<h4>*Integración de diferentes lenguajes de programación en un mismo entorno de desarrollo Visual Studio (Visual Basic, Visual C++, Visual C#).</h4>
+<h4>*Posibilidad de crear aplicaciones para Microsoft Office.</h4>
+<h4>*Acceso a las funciones de la API de Windows.</h4>
+<h4>*Posibilidad de crear archivos ejecutables, librerías de clases, sitios webs con el lenguaje de programación ASP.NET, aplicaciones para dispositivos móviles, etc.</h4>
+<h4>*Creación de aplicaciones que interaccionan con la gran mayoría de Sistemas Gestores de Bases de Datos Relacionales y Orientados a Objetos (SGBDROO).</h4>
+<h4>Posibilidad de diseñar clases, controles y componentes nuevos, y darles sus propios comportamientos y propiedades para reutilizarlos en otras aplicaciones o entornos de desarrollo.</h4>
+<h3>Además, Visual Basic incorpora una serie de características que posibilitan crear aplicaciones accesibles para usuarios con discapacidad, como:</h3>
+<h4>*Posibilidad de compatibilidad e interacción de las aplicaciones con el software de Tecnología de Asistencia.</h4>
+<h4>*Posibilidad de uso exclusivo de todas las funciones con teclado.</h4>
+<h4>*Posibilidad de ampliar el tamaño de la interfaz gráfica y de cada uno de los controles que la forman.</h4>
+<h4>*Compatibilidad con las diferentes modalidades de configuración de las características de accesibilidad de Windows.</h4>
+<h3>Según se expone en el sitio web de Microsoft Developer Network (MSDN), las aplicaciones que incorporan el logotipo de certificación para Windows deben cumplir los cinco requisitos de accesibilidad que se mencionan a continuación:</h3>
+<h4>*Las configuraciones establecidas en el Panel de control, por lo que respecta a tamaño, color, fuente y entrada de datos deben adoptarse de forma automática y consistente con la interfaz gráfica.</h4>
+<h4>*La modalidad de alto contraste debe ser compatible y adoptada por la interfaz gráfica de la aplicación.</h4>
+<h4>*Debe ser posible tener acceso mediante teclado a toda la funcionalidad de la aplicación.</h4>
+<h4>*En todo momento durante la ejecución de la aplicación, la interfaz gráfica debe mostrar al usuario dónde se halla el foco del teclado.</h4>
+<h4>*Si la aplicación ofrece información sonora importante, ésta debe ser accesible por otros canales.</h4>
+<h4>En este trabajo se introduce el desarrollo de aplicaciones accesibles con Visual Basic, analizando el concepto de Tecnología de Asistencia en el contexto del sistema operativo de Microsoft, revisando las propiedades de accesibilidad en los controles de Visual Basic, y describiendo cuáles son los requisitos de accesibilidad en las aplicaciones de Microsoft Windows y cómo aplicarlos con Visual Basic.</h4>
+ </div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Sust6','','imagenes/Basic.png',1)"><img src="imagenes/lenguajes/VisualBasic.png" width="30%" height="20%" id="Sust6"></a> 
+ 
+ <div style="width:40%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+ <li class="ui-first-child ui-last-child">
+ <a data-role="button" href="http://www.nosolousabilidad.com/articulos/visual_basic.htm" target="_self">¡PARA SABER MÁS!</a>
+ </li>
+ </ul>
+ </div>
+ 
+ </div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina9" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>VISUAL BASIC</h1>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div align="justify">
+<h1><center>Tecnología de asistencia</center></h1>
+<h4>El concepto Tecnología de Asistencia (TA) hace referencia a un conjunto de aplicaciones software y de dispositivos hardware que hacen posible el uso del ordenador a perfiles concretos de usuarios con discapacidad. Entre los dispositivos hardware de TA destacan las líneas Braille y los teclados y dispositivos apuntadores alternativos. Entre las aplicaciones software de TA más significativas podemos destacar:</h4>
+<h2>Lectores de pantalla:</h2> <h4>permiten a usuarios invidentes utilizar el ordenador a través de la salida de audio en forma de síntesis de voz. Mediante atajos de teclado pueden hacer uso de las aplicaciones cuya salida en pantalla se traduce en secuencias verbales a través de la síntesis de voz.</h4>
+<h2>Magnificadores de pantall:</h2> <h4>Permiten a usuarios con discapacidad visual ampliar el área del escritorio a la escala que les resulte más adecuada.</h4>
+<h4>Software de reconocimiento de caracteres (OCR). Permite a usuarios invidentes transformar imágenes que contienen contenido textual en texto al que puedan acceder mediante lectores de pantalla.</h4>
+<h4>Software de reconocimiento de comandos de voz. Mediante la entrada de comandos de voz, usuarios con extremidades superiores amputadas o paralizadas pueden transmitir órdenes y contenidos textuales al ordenador.</h4>
+<h4>Opciones de accesibilidad de Microsoft Windows: Permiten configurar ciertas características de accesibilidad del sistema operativo, como son:</h4>
+<h3>Modalidad de pantalla en alto contraste.</h3>
+<h2>Ampliador de pantalla:</h2> <h4>Cuando se activa esta modalidad, la pantalla se divide en dos partes. En una parte de la pantalla se visualiza ampliado el entorno del cursor o del puntero del ratón, de forma que usuarios con discapacidad visual puedan ver lo que están haciendo de forma ampliada y de forma normal.</h4>
+<h3>Diferentes modalidades alternativas de uso del teclado y el ratón.</h3>
+<h4>La gran mayoría de aplicaciones de TA utilizan un controlador de dispositivo de video que se instala entre la interfaz gráfica de dispositivo y el controlador de dispositivo de la tarjeta gráfica. Así es posible, en todo momento, detectar los eventos que ocurren en pantalla, como el cambio de foco entre controles, ventanas, cuadros de dialogo y aplicaciones, y el movimiento del cursor y del puntero del ratón.</h4>
+<h4>En Microsoft Windows las aplicaciones de TA pueden tener acceso a los elementos de la interfaz gráfica de usuario a través de MSAA (Microsoft Active Accessibility), una API o interfaz de programación de aplicaciones.</h4>
+ </div>
+ 
+ <div style="width:50%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="a">
+ <li class="ui-first-child ui-last-child">
+ <a data-role="button" href="VisualBasic.pdf" target="_self">CÓMO APRENDER A USAR VISUAL BASIC (PDF)</a>
+ </li>
+ </ul>
+ </div>
+ 
+ </div>
+    
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Pagina10" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>LENGUAJES DE PROGRAMACIÓN</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div align="justify">
+ <h4>Simula (1967) es aceptado como el primer lenguaje que posee las características principales de un lenguaje orientado a objetos. Fue creado para hacer programas de simulación, en donde los "objetos" son la representación de la información más importante. Smalltalk (1972 a 1980) es posiblemente el ejemplo canónico, y con el que gran parte de la teoría de la programación orientada a objetos se ha desarrollado.<h4>
+ <h4>Entre los lenguajes orientados a objetos se destacan los siguientes:</h4>
+ABAP -> SAP Lenguaje orientado a eventos<br>
+ABL Lenguaje de programación de OpenEdge de Progress Software<br>
+ActionScript<br>
+ActionScript 3<br>
+Ada<br>
+C++<br>
+C#<br>
+Clarion<br>
+Clipper (lenguaje de programación) (Versión 5.x con librería de objetos Class(y))<br>
+D<br>
+Object Pascal (Embarcadero Delphi)<br>
+Gambas<br>
+Genie<br>
+Harbour<br>
+Eiffel<br>
+Fortran 90/95<br>
+Java<br>
+JavaScript (la herencia se realiza por medio de la programación basada en prototipos)<br>
+Lexico (en castellano)<br>
+Objective-C<br>
+Ocaml<br>
+Oz<br>
+R<br>
+Perl (soporta herencia múltiple. La resolución se realiza en preorden, pero puede modificarse al algoritmo linearization C3 por medio del módulo Class::C3 en CPAN)<br>
+PHP (a partir de su versión 5)<br>
+PowerBuilder<br>
+Python<br>
+Ruby<br>
+Self<br>
+Smalltalk (Entorno de objetos puro)<br>
+Magik (SmallWorld)<br>
+Vala<br>
+VB.NET<br>
+Visual FoxPro (en su versión 6)<br>
+Visual Basic 6.0<br>
+Visual DataFlex<br>
+Visual Objects<br>
+XBase++<br>
+Lenguaje DRP<br>
+Lenguaje de programación Scala (lenguaje usado por Twitter)
+<h4>Muchos de estos lenguajes de programación no son puramente orientados a objetos, sino que son híbridos que combinan la POO con otros paradigmas.</h4>
+<h4>Al igual que C++, otros lenguajes, como OOCOBOL, OOLISP, OOPROLOG y Object REXX, han sido creados añadiendo extensiones orientadas a objetos a un lenguaje de programación clásico.</h4>
+<h4>Un nuevo paso en la abstracción de paradigmas de programación es la Programación Orientada a Aspectos (POA). Aunque es todavía una metodología en estado de maduración, cada vez atrae a más investigadores e incluso proyectos comerciales en todo el mundo.</h4>
+ </div>
+ 
+ <div data-role="collapsible" data-content-theme="false" align="center">
+ <h1>Visualizar algunos lenguajes</h1>
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/java.png" alt="Java" title="Java" id="wows1_0"/></li>
+		<li><img src="data1/images/cgato.png" alt="Cgato" title="Cgato" id="wows1_1"/></li>
+		<li><img src="data1/images/c.png" alt="C" title="C" id="wows1_2"/></li>
+		<li><img src="data1/images/javascript.png" alt="JavaScript" title="JavaScript" id="wows1_3"/></li>
+		<li><img src="data1/images/php.png" alt="Php" title="Php" id="wows1_4"/></li>
+		<li><img src="data1/images/python.jpg" alt="Python" title="Python" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/scala.png" alt="bootstrap carousel" title="Scala" id="wows1_6"/></a></li>
+		<li><img src="data1/images/visualbasic.png" alt="VisualBasic" title="VisualBasic" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Java"><span><img src="data1/tooltips/java.png" alt="Java"/>1</span></a>
+		<a href="#" title="Cgato"><span><img src="data1/tooltips/cgato.png" alt="Cgato"/>2</span></a>
+		<a href="#" title="C"><span><img src="data1/tooltips/c.png" alt="C"/>3</span></a>
+		<a href="#" title="JavaScript"><span><img src="data1/tooltips/javascript.png" alt="JavaScript"/>4</span></a>
+		<a href="#" title="Php"><span><img src="data1/tooltips/php.png" alt="Php"/>5</span></a>
+		<a href="#" title="Python"><span><img src="data1/tooltips/python.jpg" alt="Python"/>6</span></a>
+		<a href="#" title="Scala"><span><img src="data1/tooltips/scala.png" alt="Scala"/>7</span></a>
+		<a href="#" title="VisualBasic"><span><img src="data1/tooltips/visualbasic.png" alt="VisualBasic"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+ </div>
+</div>
+   
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+ 
+ <div data-role="page" id="Programador" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>INFORMACIÓN DEL PROGRAMADOR</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false" align="center">
+ <h1>Foto de Perfil</h1>
+ <img src="imagenes/FotoPerfil.jpg" width="50%" height="50%">
+ </div>
+ <div align="center">
+ <h2>ALUMNO:</h2> <h4>Ulises Miró García</h4>
+ <h2>GRUPO Y SEMESTRE:</h2> <h4>4° "H"</h4>
+ <h2>SUBMÓDULO:</h2> <h3>"DAM"</h3> <h4>"Desarrolla Aplicaciones Móviles"</h4>
+ <h2>DOCENTE:</h2> <h4>José Antonio Gómez Hernández</h4>
+ </div>
+ <div data-role="collapsible" data-content-theme="false" align="center">
+ <h1>IMAGEN ESPECIAL</h1>
+ <img src="imagenes/Goku.png" width="50%" height="70%">
+ </div>
+</div>
+ 
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <img src="res/android/mdpi.png" width="46" height="46">
+ <h4>APP10 Proyecto Final</h4>
+ <h4>ULISES MIRÓ GARCÍA</h4>
+ </div>
+ </div>
+
+</body>
+</html>
